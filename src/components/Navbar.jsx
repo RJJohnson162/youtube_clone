@@ -10,9 +10,9 @@ const Navbar = () => (
     p = {2}
     sx = {{ position: 'sticky', background: '#000' , top: 0, justifyContent: 'space-between' }} 
   >
-    <link to = '/' style = {{display: 'flex', alignItems: 'center'}}>
+    <Link to = '/' style = {{display: 'flex', alignItems: 'center'}}>
       <img src = {logo} alt = "logo" height = {45} />
-    </link>
+    </Link>
   </stack>
 );
 
