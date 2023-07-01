@@ -12,7 +12,8 @@ import {
 
 const VideoCard = ({
     video: {
-        id: { videoId, snippet },
+        id: { videoId },
+        snippet,
     },
 }) => {
     return (
@@ -42,7 +43,11 @@ const VideoCard = ({
                     </Typography>
                 </Link>
                 <Link
-                    to={snippet?.channelId ? `/video/${videoId}` : demoVideoUrl}
+                    to={
+                        snippet?.channelId
+                            ? `/channel/${snippet?.channelId}`
+                            : demoChannelUrl
+                    }
                 >
                     <Typography
                         variant="subtitle2"
