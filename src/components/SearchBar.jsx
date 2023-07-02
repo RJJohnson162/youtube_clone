@@ -23,6 +23,7 @@ const SearchBar = () => {
             component="form"
             onSubmit={handleSubmit}
             sx={{
+                width: "auto",
                 borderRadius: 20,
                 border: "1px solid #e3e3e3",
                 pl: 2,
@@ -32,6 +33,7 @@ const SearchBar = () => {
         >
             <input
                 className="search-bar"
+                style={{ width: { xs: "70px" } }}
                 placeholder="Search..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
@@ -40,7 +42,7 @@ const SearchBar = () => {
                 type="submit"
                 sx={{
                     p: "10px",
-                    color: "red",
+                    color: "black",
                 }}
             >
                 <Search />
