@@ -33,7 +33,7 @@ const SearchBar = () => {
         >
             <input
                 className="search-bar"
-                style={{ width: { xs: "70px" } }}
+                style={{ width: { xs: "100px", sm: "290px", md: "auto" } }}
                 placeholder="Search..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
